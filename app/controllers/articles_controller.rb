@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
     end
     
     abs_image_path = Rails.root.join('app', 'assets', 'images', page_id, 'manga*.png')
-    @page_images = Dir::glob(abs_image_path).map do |page_image|
+    @page_images = Dir::glob(abs_image_path).sort.map do |page_image|
       page_id + '/' + page_image.split('/').last
     end
   end
