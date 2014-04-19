@@ -1,5 +1,10 @@
 <div class="article">
   <h2><%= "第#{@story[:story_id]}話 #{@story[:title]}" %></h2>
+  <span class="notice">
+    <pre>
+    ←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます
+    </pre>
+  </span>
   <div class="pages clearfix">
     <% @page_images.each_with_index do |page_image,i| %>
     <div class="page">
@@ -7,4 +12,18 @@
     </div>
     <% end %>
   </div>
+  <dl>
+    <dt>こうかいび：</dt>
+    <dd>
+      <%= @story[:publish_at] %>
+    </dd>
+    <dt>かんとく：</dt>
+    <dd>
+      <%= @story[:directed_by] %>
+    </dd>
+    <dt>せいさく：</dt>
+    <dd>
+      <%= @story[:produced_by] %>
+    </dd>
+  </dl>
 </div>
