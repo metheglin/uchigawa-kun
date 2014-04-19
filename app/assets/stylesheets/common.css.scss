@@ -1,17 +1,24 @@
 body {
-  background: #BC5911;
+  background: #d5742a;
 }
 
 header {
-  background: #BC5911;
+  background: #d5742a;
   padding: 10px 20px;
+  padding-bottom: 26px;
+  background: image-url("navs/yellow_line.png") repeat-x bottom;
 }
 header h1 {
+  display: inline-block;
   font-size: 100%;
+  padding: 7px 5px 0 5px;
 }
 header h1 a {
   color: white;
   font-weight: normal;
+}
+header .logo {
+  display: inline-block;
 }
 
 .content-wrapper {
@@ -21,14 +28,17 @@ header h1 a {
   max-width: 1000px;
   margin: auto;
   min-height: 400px;
+  padding-top: 5px;
+  padding-bottom: 30px;
 }
 
 .element-wrapper {
-  border-bottom: solid 1px #BC5911;
+  margin: 20px auto;
+  border-bottom: solid 1px #d5742a;
 }
 .element-caption {
-  border-bottom: solid 1px #BC5911;
-  color: #BC5911;
+  border-bottom: solid 1px #d5742a;
+  color: #d5742a;
 }
 .element-content {
   padding: 15px 0;
@@ -36,7 +46,7 @@ header h1 a {
 
 footer {
   min-height: 100px;
-  background: #BC5911;
+  background: #d5742a;
   font-size: 75%;
   color: white;
 }
@@ -50,6 +60,44 @@ footer>div {
 /* ------ */
 
 .soundcloud {
-  width: 800px;
+  max-width: 800px;
   margin: auto;
+  margin-top: 30px;
+}
+.recent-entries {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 30px;
+}
+.recent-entries .entry .thumbnail {
+  float: left;
+  padding: 0 2%;
+  width: 20%;
+  min-width: 160px;
+  text-align: center;
+}
+.recent-entries .entry .thumbnail img {
+  max-width: 160px;
+}
+.recent-entries .entry .description {
+  float: left;
+  padding: 0 2%;
+  width: 60%;
+}
+.recent-entries .entry .description, 
+.recent-entries .entry .description a {
+  color: #444;
+}
+.recent-entries .entry .description h3 {
+  font-size: 150%;
+  margin: 8px 0;
+}
+.recent-entries .entry .description p {
+  font-size: 80%;
+}
+.recent-entries .entry .description span {
+  display: block;
+  font-size: 70%;
+  color: #888;
+  margin-top: 5px;
 }

@@ -48,6 +48,11 @@ body {
 .hidden {
   display: none;
 }
+.transparent {
+  filter: alpha(opacity=65);
+  -moz-opacity:0.65;
+  opacity:0.65;
+}
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }

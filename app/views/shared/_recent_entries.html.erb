@@ -1,0 +1,22 @@
+<div class="element-wrapper recent-entries">
+  <div class="element-caption">
+    新着のまんが
+  </div>
+  <div class="element-content">
+    <% @stories.each do |page_id, story| %>
+    <div class="entry clearfix">
+      <div class="thumbnail transparent">
+        <%= 
+          link_to image_tag("#{page_id}/thumbnail.png", alt: story[:title]), 
+            article_path(story[:story_id])
+        %>
+      </div>
+      <div class="description">
+        <h3><%= link_to story[:title], article_path(story[:story_id]) %></h3>
+        <p><%= story[:description] %></p>
+        <span><%= story[:publish_at] %>更新</span>
+      </div>
+    </div><!-- /entry -->
+    <% end %>
+  </div><!-- /element-content -->
+</div><!-- /element-wrapper -->

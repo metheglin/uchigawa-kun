@@ -30,8 +30,9 @@ module UchigawaKun
     config.stories = {
       '001' => {
         story_id: '1',
-        title: 'うちがわくん登場',
-        publish_at: '2014/04/20 00:00:00',
+        title: '黄色い線のうちがわくん登場！',
+        description: '2014年、アベノミクス奏功。景気わりと快調。一時80円台を切る恐るべき円高も次第に解消。ここは茅場町。トレーダーでにぎわう東証。いっぽう...',
+        publish_at: '2014/04/20',
       }
     };
   end

@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
       render :nothing => true, :status => 404
     end
     
-    abs_image_path = Rails.root.join('app', 'assets', 'images', page_id, '*.png')
+    abs_image_path = Rails.root.join('app', 'assets', 'images', page_id, 'manga*.png')
     @page_images = Dir::glob(abs_image_path).map do |page_image|
       page_id + '/' + page_image.split('/').last
     end

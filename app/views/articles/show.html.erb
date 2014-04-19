@@ -1,8 +1,9 @@
 <div class="article">
+  <h2><%= "第#{@story[:story_id]}話 #{@story[:title]}" %></h2>
   <div class="pages clearfix">
-    <% @page_images.each do |page_image| %>
+    <% @page_images.each_with_index do |page_image,i| %>
     <div class="page">
-      <%= image_tag page_image %>
+      <%= image_tag page_image, alt: "#{@story[:title]}-#{@story[:story_id]}-#{i+1}" %>
     </div>
     <% end %>
   </div>
