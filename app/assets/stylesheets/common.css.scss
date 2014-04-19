@@ -1,0 +1,35 @@
+body {
+  background: #BC5911;
+}
+
+header {
+  background: #BC5911;
+  padding: 10px 20px;
+}
+header h1 {
+  color: white;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.content-wrapper {
+  background: white;
+}
+.content {
+  max-width: 1000px;
+  margin: auto;
+  min-height: 400px;
+}
+
+footer {
+  min-height: 100px;
+  background: #BC5911;
+  font-size: 75%;
+  color: white;
+}
+footer>div {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+}

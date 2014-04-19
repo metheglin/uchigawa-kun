@@ -24,5 +24,15 @@ module UchigawaKun
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    
+    config.default_directed_by = 'metheglin'
+    config.default_produced_by = 'metheglin'
+    config.stories = {
+      '001' => {
+        story_id: '1',
+        title: 'うちがわくん登場',
+        publish_at: '2014/04/20 00:00:00',
+      }
+    };
   end
 end

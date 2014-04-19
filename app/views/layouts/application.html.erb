@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>UchigawaKun</title>
+  <title></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  
+  <%= render 'layouts/shims' %>
 </head>
 <body>
 
-<%= yield %>
-
+  <%= render 'shared/header' %>
+  <div class="content-wrapper">
+    <div class="content">
+      <%= yield %>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+  
 </body>
 </html>
