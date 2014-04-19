@@ -31,6 +31,9 @@ img {
 button, input {
   line-height: normal;
 }
+a {
+  text-decoration: none;
+}
 
 /* fonts */
 body {

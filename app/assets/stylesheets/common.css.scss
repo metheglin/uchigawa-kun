@@ -7,8 +7,10 @@ header {
   padding: 10px 20px;
 }
 header h1 {
-  color: white;
   font-size: 100%;
+}
+header h1 a {
+  color: white;
   font-weight: normal;
 }
 
@@ -19,6 +21,17 @@ header h1 {
   max-width: 1000px;
   margin: auto;
   min-height: 400px;
+}
+
+.element-wrapper {
+  border-bottom: solid 1px #BC5911;
+}
+.element-caption {
+  border-bottom: solid 1px #BC5911;
+  color: #BC5911;
+}
+.element-content {
+  padding: 15px 0;
 }
 
 footer {
@@ -32,4 +45,11 @@ footer>div {
   margin: auto;
   padding: 20px 0;
   text-align: center;
+}
+
+/* ------ */
+
+.soundcloud {
+  width: 800px;
+  margin: auto;
 }
