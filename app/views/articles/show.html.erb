@@ -1,8 +1,7 @@
 <div class="article">
   <h2><%= "第#{@story[:story_id]}話 #{@story[:title]}" %></h2>
   <span class="notice">
-    <pre>
-    ←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます
+    <pre>←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます←右から左に読みます
     </pre>
   </span>
   <div class="pages clearfix">
@@ -11,6 +10,10 @@
       <%= image_tag page_image, alt: "#{@story[:title]}-#{@story[:story_id]}-#{i+1}" %>
     </div>
     <% end %>
+  </div>
+  <div class="social-btns clearfix">
+    <span class='social-btns-url'><%= canonical_url article_path(@story[:story_id]) %></span>
+    <span class='social-btns-title'><%= @story[:title] %></span>
   </div>
   <dl>
     <dt>こうかいび：</dt>
