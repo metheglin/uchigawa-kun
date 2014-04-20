@@ -1,8 +1,10 @@
 class ArticlesController < ApplicationController
   def show
     page_id = convert_page_id params[:id]
-    unless @story = UchigawaKun::Application.config.stories[page_id.to_s]
+    @story = UchigawaKun::Application.config.stories[page_id]
+    if @story.nil?
       render :nothing => true, :status => 404
+      return
     end
 
     @story[:directed_by] ||= UchigawaKun::Application.config.default_directed_by
